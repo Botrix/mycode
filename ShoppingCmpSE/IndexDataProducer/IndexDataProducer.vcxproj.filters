@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="RegExp">
+      <UniqueIdentifier>{39962c83-4c99-4ee0-8ec4-846191f323f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cache">
+      <UniqueIdentifier>{fdf13cd4-2644-4b6a-a974-f79d78130958}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="list">
+      <UniqueIdentifier>{0554de7e-d233-468e-969e-e4f311beb8fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Store">
+      <UniqueIdentifier>{6a4fef54-1496-4106-97c1-3f9c3e736b23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Store\amazon">
+      <UniqueIdentifier>{ef00a0e3-712b-44ee-ac39-c25d051d5789}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Store\360buy">
+      <UniqueIdentifier>{2d03dace-4667-4c7a-b425-5117985325bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="page_parse">
+      <UniqueIdentifier>{fe9cec60-b8b4-4462-9dc7-9346eff748f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db">
+      <UniqueIdentifier>{27bd7861-1b33-4693-afb7-29933b880a7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Store\gome">
+      <UniqueIdentifier>{3f111df0-90c2-4c9e-96e7-a61dd4e117c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Store\suning">
+      <UniqueIdentifier>{f6e587a1-74ee-4fcf-a4ac-1ec5f5cb4701}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="regex.h">
+      <Filter>RegExp</Filter>
+    </ClInclude>
+    <ClInclude Include="page_cache.h">
+      <Filter>Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="double_linked_list.h">
+      <Filter>list</Filter>
+    </ClInclude>
+    <ClInclude Include="page_parse.h">
+      <Filter>page_parse</Filter>
+    </ClInclude>
+    <ClInclude Include="data_product_360buy.h">
+      <Filter>Store\360buy</Filter>
+    </ClInclude>
+    <ClInclude Include="data_product_amazon.h">
+      <Filter>Store\amazon</Filter>
+    </ClInclude>
+    <ClInclude Include="base_def.h" />
+    <ClInclude Include="data_update.h" />
+    <ClInclude Include="db_sqlsvr.h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="base_func.h" />
+    <ClInclude Include="data_product_gome.h">
+      <Filter>Store\gome</Filter>
+    </ClInclude>
+    <ClInclude Include="data_product_suning.h">
+      <Filter>Store\suning</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="page_cache.c">
+      <Filter>Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="page_parse.c">
+      <Filter>page_parse</Filter>
+    </ClCompile>
+    <ClCompile Include="regex.c">
+      <Filter>RegExp</Filter>
+    </ClCompile>
+    <ClCompile Include="data_product_360buy.c">
+      <Filter>Store\360buy</Filter>
+    </ClCompile>
+    <ClCompile Include="data_product_amazon.c">
+      <Filter>Store\amazon</Filter>
+    </ClCompile>
+    <ClCompile Include="data_update.c" />
+    <ClCompile Include="db_sqlsvr.c">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="base_func.c" />
+    <ClCompile Include="data_product_gome.c">
+      <Filter>Store\gome</Filter>
+    </ClCompile>
+    <ClCompile Include="data_product_suning.c">
+      <Filter>Store\suning</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

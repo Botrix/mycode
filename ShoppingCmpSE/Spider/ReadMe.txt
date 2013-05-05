@@ -1,0 +1,7 @@
+对应购物搜索引擎的“网页爬虫”
+
+项目配置中的预编译器一定要添加
+CURL_DISABLE_LDAP
+CURL_STATICLIB
+
+对应的编译libcurl库时也要添加这两个宏

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="header">
+      <UniqueIdentifier>{b18ce755-30da-4b50-a16d-e61303da8260}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header\libcurl">
+      <UniqueIdentifier>{bd256c3e-2b0e-4f43-9148-06a5876c7523}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="spider.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="curl\curl.h">
+      <Filter>header\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="curl\curlbuild.h">
+      <Filter>header\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="curl\curlrules.h">
+      <Filter>header\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="curl\curlver.h">
+      <Filter>header\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="curl\easy.h">
+      <Filter>header\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="curl\mprintf.h">
+      <Filter>header\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="curl\multi.h">
+      <Filter>header\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="curl\stdcheaders.h">
+      <Filter>header\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="curl\typecheck-gcc.h">
+      <Filter>header\libcurl</Filter>
+    </ClInclude>
+    <ClInclude Include="page_buf.h">
+      <Filter>header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="get_url_data.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="page_buf.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
