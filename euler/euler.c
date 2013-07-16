@@ -340,7 +340,6 @@ int euler(struct edge_t* edge_array, int edge_num, int* result)
 
 	init_ALGraph(&algraph);
 	create_ALGraph(&algraph, edge_array, edge_num);
-	//print_ALGraph(&algraph);
 
 	for (i = 0; i < algraph.point_num; i++)
 	{
