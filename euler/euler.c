@@ -161,10 +161,13 @@ static void print_ALGraph(struct ALGraph* alg)
 {
 	int i = 0;
 
-	fprintf(stdout, "ALGraph : \n");
+	fprintf(stdout, "\nALGraph : \n");
 	for (i = 0; i < alg->edge_num; i++)
 	{
-		fprintf(stdout, "%d---%d\n", alg->edge_array[i].edge.left, alg->edge_array[i].edge.right);
+		fprintf(stdout, "%d---%d  %d \n", 
+			alg->edge_array[i].edge.left, 
+			alg->edge_array[i].edge.right,
+			alg->edge_array[i].walk);
 	}
 
 	for (i = 0; i < alg->point_num; i++)
@@ -172,6 +175,8 @@ static void print_ALGraph(struct ALGraph* alg)
 		print_list_point(alg->point_array + i);
 		fprintf(stdout, "\n");
 	}
+
+	fprintf(stdout, "end\n");
 }
 
 static void create_ALGraph(struct ALGraph* alg, struct edge_t* edge_array, int edge_num)
@@ -265,9 +270,26 @@ void walk(int point, struct stack_t* stk, struct ALGraph* _alg)
 	int idx = -1;
 	struct point_t* next_point = NULL;
 
-	struct ALGraph* alg = (struct ALGraph*)malloc(sizeof(struct ALGraph));
+	struct ALGraph* alg = NULL;
+	alg = (struct ALGraph*)malloc(sizeof(struct ALGraph));
 	init_ALGraph(alg);
 	cpy_ALGraph(alg, _alg);
+
+	//fprintf(stdout, "\n--------------------\n");
+
+	//print_ALGraph(alg);
+
+	stack_push(stk, point);
+
+	//print_stack(stk);
+
+	/*是否全部走完*/
+	if (if_walk_through(alg))
+	{
+		print_stack(stk);
+
+		return;
+	}
 	
 	idx = find_point(alg, point);
 
@@ -293,26 +315,14 @@ void walk(int point, struct stack_t* stk, struct ALGraph* _alg)
 		{
 			alg->edge_array[idx].walk = 1;
 
-			stack_push(stk, point);
-
-			/*是否全部走完*/
-			if (if_walk_through(alg))
-			{
-				print_stack(stk);
-
-				stack_pop(stk);
-				return;
-			}
-			else
-			{
-				walk(next_point->val, stk, alg);
-			}
+			walk(next_point->val, stk, alg);
+			stack_pop(stk);
+			alg->edge_array[idx].walk = 0;
 		}
 
 		next_point = next_point->next;
 	}
 
-	stack_pop(stk);
 	return;
 }
 
@@ -330,19 +340,13 @@ int euler(struct edge_t* edge_array, int edge_num, int* result)
 
 	init_ALGraph(&algraph);
 	create_ALGraph(&algraph, edge_array, edge_num);
-	print_ALGraph(&algraph);
+	//print_ALGraph(&algraph);
 
 	for (i = 0; i < algraph.point_num; i++)
 	{
 		walk(algraph.point_array[i].val, &stk, &algraph);
+		stack_pop(&stk);
 	}
-// 
-// 	init_ALGraph(&algraph2);
-// 	algraph2.point_array = (struct point_t*)malloc(algraph.point_num * sizeof(struct point_t));
-// 	algraph2.edge_array = (struct my_edge_t*)malloc(edge_num * sizeof(struct my_edge_t));
-// 
-// 	cpy_ALGraph(&algraph2, &algraph);
-// 	print_ALGraph(&algraph2);
 
 	return 0;
 }

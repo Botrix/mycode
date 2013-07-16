@@ -33,4 +33,9 @@ TYPE stack_pop(struct stack_t* stk)
 	return stk->array[stk->pos];
 }
 
+void stack_clear(struct stack_t* stk)
+{
+	stk->pos = 0;
+}
+
 #endif
