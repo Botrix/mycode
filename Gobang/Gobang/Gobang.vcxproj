@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{021D1D13-0E15-400D-BE62-08534AA73542}</ProjectGuid>
+    <RootNamespace>Gobang</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Gobang\Engine\Include;$(SolutionDir)\Gobang\MFC;$(SolutionDir)\Gobang;$(SolutionDir)\Gobang\HMI\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>uafxcwd.lib;Libcmtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>uafxcwd.lib Libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>false</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Gobang\Engine\Include;$(SolutionDir)\Gobang;$(SolutionDir)\Gobang\MFC;$(SolutionDir)\Gobang\HMI\Include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>uafxcw.lib;Libcmt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>uafxcw.lib Libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Engine\Include\JFCore.h" />
+    <ClInclude Include="Engine\Include\JFEngine.h" />
+    <ClInclude Include="Engine\Include\JFFile.h" />
+    <ClInclude Include="Engine\Include\JFGameTree.h" />
+    <ClInclude Include="Engine\Include\JFPlayer.h" />
+    <ClInclude Include="Engine\Include\JFPublicFunction.h" />
+    <ClInclude Include="Engine\Include\JFStruct.h" />
+    <ClInclude Include="Engine\Include\JFSysData.h" />
+    <ClInclude Include="Engine\Include\JFType.h" />
+    <ClInclude Include="MFC\Gobang.h" />
+    <ClInclude Include="MFC\GobangDlg.h" />
+    <ClInclude Include="MFC\stdafx.h" />
+    <ClInclude Include="HMI\Include\JFHMI.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\五子棋棋子\bitmap2.bmp" />
+    <None Include="res\五子棋棋子\bitmap3.bmp" />
+    <None Include="res\五子棋棋手信息区背景\BLACK_NAME.bmp" />
+    <None Include="res\五子棋棋手信息区背景\BLACK_SCORE.bmp" />
+    <None Include="res\五子棋棋手信息区背景\BLACK_TIME_COST.bmp" />
+    <None Include="res\Gobang.ico" />
+    <None Include="res\Gobang.rc2" />
+    <None Include="res\五子棋棋手信息区背景\TIMER.bmp" />
+    <None Include="res\五子棋棋手信息区背景\WHITE_NAME.bmp" />
+    <None Include="res\五子棋棋手信息区背景\WHITE_SCORE.bmp" />
+    <None Include="res\五子棋棋手信息区背景\WHITE_TIME_COST.bmp" />
+    <None Include="res\五子棋棋子\当前白色棋子.bmp" />
+    <None Include="res\五子棋棋子\当前黑色棋子.bmp" />
+    <None Include="res\五子棋按钮\按钮_常态.bmp" />
+    <None Include="res\五子棋按钮\按钮_按下.bmp" />
+    <None Include="res\五子棋按钮\按钮_触发.bmp" />
+    <None Include="res\五子棋棋子\棋手信息区_白色棋子.bmp" />
+    <None Include="res\五子棋棋子\棋手信息区_黑色棋子.bmp" />
+    <None Include="res\五子棋棋子\白色棋子.bmp" />
+    <None Include="res\五子棋UI背景\背景.bmp" />
+    <None Include="res\五子棋棋子\连珠白色棋子.bmp" />
+    <None Include="res\五子棋棋子\连珠黑色棋子.bmp" />
+    <None Include="res\五子棋按钮\退出_常态.bmp" />
+    <None Include="res\五子棋按钮\退出_按下.bmp" />
+    <None Include="res\五子棋按钮\退出_高亮.bmp" />
+    <None Include="res\五子棋棋子\黑色棋子.bmp" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Gobang.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine\Src\JFCore.cpp" />
+    <ClCompile Include="Engine\Src\JFEngine.cpp" />
+    <ClCompile Include="Engine\Src\JFFile.cpp" />
+    <ClCompile Include="Engine\Src\JFGameTree.cpp" />
+    <ClCompile Include="Engine\Src\JFPlayer.cpp" />
+    <ClCompile Include="Engine\Src\JFSysData.cpp" />
+    <ClCompile Include="MFC\Gobang.cpp" />
+    <ClCompile Include="MFC\GobangDlg.cpp" />
+    <ClCompile Include="MFC\stdafx.cpp" />
+    <ClCompile Include="HMI\Src\JFHMI.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

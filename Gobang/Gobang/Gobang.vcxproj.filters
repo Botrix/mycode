@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Include\Engine">
+      <UniqueIdentifier>{bfb93273-d7ec-42fe-a5ef-cd4aaaffc3ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\MFC">
+      <UniqueIdentifier>{f2c065d5-71f7-4ac6-a023-540270aa6815}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\HMI">
+      <UniqueIdentifier>{c929f8a7-f841-4b7f-87b3-680c9ee17807}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Res">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Src\Engine">
+      <UniqueIdentifier>{689ee7c8-4580-4f94-8a65-1437d6dd9cf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\MFC">
+      <UniqueIdentifier>{30a0de09-86b1-4f0b-9cf2-bf7c323ea131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\HMI">
+      <UniqueIdentifier>{d798df99-c376-4d4c-b0b8-2b97c8e92427}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Include\JFCore.h">
+      <Filter>Include\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Include\JFEngine.h">
+      <Filter>Include\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Include\JFFile.h">
+      <Filter>Include\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Include\JFGameTree.h">
+      <Filter>Include\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Include\JFPlayer.h">
+      <Filter>Include\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Include\JFPublicFunction.h">
+      <Filter>Include\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Include\JFStruct.h">
+      <Filter>Include\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Include\JFSysData.h">
+      <Filter>Include\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Include\JFType.h">
+      <Filter>Include\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="MFC\Gobang.h">
+      <Filter>Include\MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="MFC\GobangDlg.h">
+      <Filter>Include\MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="MFC\stdafx.h">
+      <Filter>Include\MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="HMI\Include\JFHMI.h">
+      <Filter>Include\HMI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\五子棋棋子\bitmap2.bmp">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="res\五子棋棋子\bitmap3.bmp">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="res\五子棋棋手信息区背景\BLACK_NAME.bmp">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="res\五子棋棋手信息区背景\BLACK_SCORE.bmp">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="res\五子棋棋手信息区背景\BLACK_TIME_COST.bmp">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="res\Gobang.ico">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="res\Gobang.rc2">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="res\五子棋棋手信息区背景\TIMER.bmp">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="res\五子棋棋手信息区背景\WHITE_NAME.bmp">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="res\五子棋棋手信息区背景\WHITE_SCORE.bmp">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="res\五子棋棋手信息区背景\WHITE_TIME_COST.bmp">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="res\五子棋棋子\当前白色棋子.bmp">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="res\五子棋棋子\当前黑色棋子.bmp">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="res\五子棋按钮\按钮_常态.bmp">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="res\五子棋按钮\按钮_按下.bmp">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="res\五子棋按钮\按钮_触发.bmp">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="res\五子棋棋子\棋手信息区_白色棋子.bmp">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="res\五子棋棋子\棋手信息区_黑色棋子.bmp">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="res\五子棋棋子\白色棋子.bmp">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="res\五子棋UI背景\背景.bmp">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="res\五子棋棋子\连珠白色棋子.bmp">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="res\五子棋棋子\连珠黑色棋子.bmp">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="res\五子棋按钮\退出_常态.bmp">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="res\五子棋按钮\退出_按下.bmp">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="res\五子棋按钮\退出_高亮.bmp">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="res\五子棋棋子\黑色棋子.bmp">
+      <Filter>Res</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Gobang.rc">
+      <Filter>Res</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine\Src\JFCore.cpp">
+      <Filter>Src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Src\JFEngine.cpp">
+      <Filter>Src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Src\JFFile.cpp">
+      <Filter>Src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Src\JFGameTree.cpp">
+      <Filter>Src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Src\JFPlayer.cpp">
+      <Filter>Src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Src\JFSysData.cpp">
+      <Filter>Src\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="MFC\Gobang.cpp">
+      <Filter>Src\MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="MFC\GobangDlg.cpp">
+      <Filter>Src\MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="MFC\stdafx.cpp">
+      <Filter>Src\MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="HMI\Src\JFHMI.cpp">
+      <Filter>Src\HMI</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
